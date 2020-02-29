@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>590</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>cl.electrodomestico.poo::Electrodomestico
+--
+-precioBase: double
+-color: String
+-consumoEnergetico: char
+-peso: int
+#precioBaseK = 100000: double
+#colorK = "blanco": String
+#consumoEnergeticoK = 'F': char
+#pesoK = 5: int
+--
++Electrodomestico(): ctor
++Electrodomestico(double precioBase, int peso): ctor
++Electrodomestico(double precioBase, String color, char consumoEnergetico, int peso): ctor
++getPrecioBase(): double
++getColor(): String
++getConsumoEnergetico(): char
++getPeso(): double
++comprobarConsumoEnergetico(char consumoEnergetico): void
++comprobarColor(String color): void
++precioFinal(): double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>10</y>
+      <w>800</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>cl.electrodomestico.poo::Television
+--
+-resolucion: int
+-sintonizadorTDT: boolean
+#resolucionK = 20: int
+#sintonizadorTDTK = false: boolean
+--
++Television(): ctor
++Television(double precioBase, int peso): ctor
++Television(double precioBase, String color, char consumoEnergetico, int peso, int resolucion, boolean sintonizadorTDT): ctor
++getResolucion(): int
++SintonizadorTDT(): boolean
++precioFinal(): double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>380</y>
+      <w>600</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>cl.electrodomestico.poo::Lavadora
+--
+-carga: int
+#cargaK = 5: int
+--
++Lavadora(): ctor
++Lavadora(double precioBase, int peso): ctor
++Lavadora(double precioBase, String color, char consumoEnergetico, int peso, int carga): ctor
++getCarga(): double
++precioFinal(): double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
